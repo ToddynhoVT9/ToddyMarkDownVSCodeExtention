@@ -1,0 +1,94 @@
+{
+  "name": "ToddyMarkDown Theme",
+  "type": "dark",
+  "colors": {},
+  "tokenColors": [
+    {
+      "scope": [
+        "punctuation.definition.block.begin.tmd",
+        "punctuation.definition.block.end.tmd",
+        "punctuation.definition.literal.begin.tmd",
+        "punctuation.definition.literal.end.tmd"
+      ],
+      "settings": {
+        "foreground": "#ff4fd8"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control.block.token.tmd",
+        "keyword.control.block.image-mode.tmd"
+      ],
+      "settings": {
+        "foreground": "#d9a441"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.block.title.tmd"
+      ],
+      "settings": {
+        "foreground": "#ff9b42"
+      }
+    },
+    {
+      "scope": [
+        "markup.heading.1.tmd",
+        "markup.heading.1.marker.tmd"
+      ],
+      "settings": {
+        "foreground": "#7ec8ff"
+      }
+    },
+    {
+      "scope": [
+        "markup.heading.2.tmd",
+        "markup.heading.2.marker.tmd"
+      ],
+      "settings": {
+        "foreground": "#3fa9ff"
+      }
+    },
+    {
+      "scope": [
+        "markup.heading.3.tmd",
+        "markup.heading.3.marker.tmd"
+      ],
+      "settings": {
+        "foreground": "#1f6fe5"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.list.begin.tmd"
+      ],
+      "settings": {
+        "foreground": "#e3c77a"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.quote.begin.tmd"
+      ],
+      "settings": {
+        "foreground": "#e05757"
+      }
+    },
+    {
+      "scope": [
+        "support.type.property-name.frontmatter.tmd"
+      ],
+      "settings": {
+        "foreground": "#a4cd54"
+      }
+    },
+    {
+      "scope": [
+        "string.unquoted.frontmatter.tmd"
+      ],
+      "settings": {
+        "foreground": "#ce9178"
+      }
+    }
+  ]
+}

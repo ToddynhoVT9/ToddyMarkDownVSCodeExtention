@@ -1,0 +1,130 @@
+{
+  "scopeName": "text.toddymarkdown",
+  "name": "ToddyMarkDown",
+  "patterns": [
+    { "include": "#frontmatter" },
+    { "include": "#literal-block" },
+    { "include": "#escaped-line" },
+    { "include": "#image-block" },
+    { "include": "#content-block" },
+    { "include": "#markdown-heading-3" },
+    { "include": "#markdown-heading-2" },
+    { "include": "#markdown-heading-1" },
+    { "include": "#markdown-list" },
+    { "include": "#markdown-blockquote" }
+  ],
+  "repository": {
+    "frontmatter": {
+      "begin": "^---$",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.frontmatter.tmd" }
+      },
+      "end": "^---$",
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.frontmatter.tmd" }
+      },
+      "name": "meta.frontmatter.tmd",
+      "patterns": [
+        {
+          "match": "^([A-Za-z_][A-Za-z0-9_-]*)(\\s*:\\s*)(.*)$",
+          "captures": {
+            "1": { "name": "support.type.property-name.frontmatter.tmd" },
+            "2": { "name": "punctuation.separator.key-value.frontmatter.tmd" },
+            "3": { "name": "string.unquoted.frontmatter.tmd" }
+          }
+        }
+      ]
+    },
+    "literal-block": {
+      "begin": "^/>$",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.literal.begin.tmd" }
+      },
+      "end": "^<\\\\$",
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.literal.end.tmd" }
+      },
+      "name": "markup.raw.block.tmd"
+    },
+    "escaped-line": {
+      "match": "^\\\\.*$",
+      "name": "markup.raw.literal.tmd"
+    },
+    "image-block": {
+      "begin": "^(\\|>)(\\*>wrap|\\*>|\\*<wrap|\\*<)(?:\\s+(\\[.*?\\]))?\\s+(!\\[.*?\\]\\(.*?\\))$",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.block.begin.tmd" },
+        "2": { "name": "keyword.control.block.image-mode.tmd" },
+        "3": { "name": "entity.name.block.title.tmd" },
+        "4": { "name": "meta.block.image.tmd" }
+      },
+      "end": "^(<\\|)$",
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.block.end.tmd" }
+      },
+      "name": "meta.block.image-wrapper.tmd",
+      "patterns": [
+        { "include": "#markdown-heading-3" },
+        { "include": "#markdown-heading-2" },
+        { "include": "#markdown-heading-1" },
+        { "include": "#markdown-list" },
+        { "include": "#markdown-blockquote" }
+      ]
+    },
+    "content-block": {
+      "begin": "^(\\|>)(!|@|\\$|##|#|\\?|\\+|~~|&)(?:\\s+(\\[.*?\\]))?$",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.block.begin.tmd" },
+        "2": { "name": "keyword.control.block.token.tmd" },
+        "3": { "name": "entity.name.block.title.tmd" }
+      },
+      "end": "^(<\\|)$",
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.block.end.tmd" }
+      },
+      "name": "meta.block.content.tmd",
+      "patterns": [
+        { "include": "#markdown-heading-3" },
+        { "include": "#markdown-heading-2" },
+        { "include": "#markdown-heading-1" },
+        { "include": "#markdown-list" },
+        { "include": "#markdown-blockquote" }
+      ]
+    },
+    "markdown-heading-3": {
+      "match": "^(###)(\\s+.*)$",
+      "captures": {
+        "1": { "name": "markup.heading.3.marker.tmd" },
+        "2": { "name": "markup.heading.3.tmd" }
+      }
+    },
+    "markdown-heading-2": {
+      "match": "^(##)(\\s+.*)$",
+      "captures": {
+        "1": { "name": "markup.heading.2.marker.tmd" },
+        "2": { "name": "markup.heading.2.tmd" }
+      }
+    },
+    "markdown-heading-1": {
+      "match": "^(#)(\\s+.*)$",
+      "captures": {
+        "1": { "name": "markup.heading.1.marker.tmd" },
+        "2": { "name": "markup.heading.1.tmd" }
+      }
+    },
+    "markdown-list": {
+      "match": "^(\\s*[-])(\\s+.*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.list.begin.tmd" },
+        "2": { "name": "meta.list.item.tmd" }
+      }
+    },
+    "markdown-blockquote": {
+      "match": "^(\\s*>)(\\s+.*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.quote.begin.tmd" },
+        "2": { "name": "markup.quote.tmd" }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "toddymarkdown",
+  "displayName": "ToddyMarkDown",
+  "description": "Syntax highlighting for ToddyMarkDown (.tmd)",
+  "publisher": "matheus-toddy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/example/tmd"
+  },
+  "version": "0.2.0",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [{
+      "id": "toddymarkdown",
+      "aliases": ["ToddyMarkDown", "tmd"],
+      "extensions": [".tmd"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "toddymarkdown",
+      "scopeName": "text.toddymarkdown",
+      "path": "./syntaxes/toddymarkdown.tmLanguage.json"
+    }],
+    "themes": [{
+      "label": "ToddyMarkDown",
+      "uiTheme": "vs-dark",
+      "path": "./themes/toddymarkdown-color-theme.json"
+    }]
+  }
+}
