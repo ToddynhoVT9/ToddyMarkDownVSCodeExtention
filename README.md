@@ -5,7 +5,7 @@ Esta é a extensão oficial para suporte à linguagem **ToddyMarkDown** (`.tmd`)
 ## O que é ToddyMarkDown?
 ToddyMarkDown é uma extensão semântica do Markdown tradicional, focada em escrita editorial rica, ensaios estruturados e documentação técnica avançada. Ele permite diagramar elementos visuais sofisticados (citações destacadas, linhas do tempo, imagens laterais "abraçadas" pelo texto) usando Blocos Especiais (`|>` e `<|`), mantendo a leveza de um arquivo de texto puro.
 
-Para ler a especificação completa, consulte a [Especificação do ToddyMarkDown](../_docs/tmd-spec/tmd-spec-v1.4.md).
+Para ler a especificação completa, consulte [ToddyMarkDown](https://github.com/ToddynhoVT9/ToddyMarkDown).
 
 ## Como Instalar em Desenvolvimento
 1. Abra este diretório (`tmd-vscode-extension`) no VS Code.
