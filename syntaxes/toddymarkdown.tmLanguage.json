@@ -38,11 +38,11 @@
     "literal-block": {
       "begin": "^/>$",
       "beginCaptures": {
-        "0": { "name": "punctuation.definition.literal.begin.tmd" }
+        "0": { "name": "keyword.control.literal.begin.tmd" }
       },
       "end": "^<\\\\$",
       "endCaptures": {
-        "0": { "name": "punctuation.definition.literal.end.tmd" }
+        "0": { "name": "keyword.control.literal.end.tmd" }
       },
       "name": "markup.raw.block.tmd"
     },
@@ -53,14 +53,14 @@
     "image-block": {
       "begin": "^(\\|>)(\\*>wrap|\\*>|\\*<wrap|\\*<)(?:\\s+(\\[.*?\\]))?\\s+(!\\[.*?\\]\\(.*?\\))$",
       "beginCaptures": {
-        "1": { "name": "punctuation.definition.block.begin.tmd" },
-        "2": { "name": "keyword.control.block.image-mode.tmd" },
-        "3": { "name": "entity.name.block.title.tmd" },
+        "1": { "name": "keyword.control.block.begin.tmd" },
+        "2": { "name": "entity.name.function.block.image-mode.tmd" },
+        "3": { "name": "string.unquoted.block.title.tmd" },
         "4": { "name": "meta.block.image.tmd" }
       },
       "end": "^(<\\|)$",
       "endCaptures": {
-        "1": { "name": "punctuation.definition.block.end.tmd" }
+        "1": { "name": "keyword.control.block.end.tmd" }
       },
       "name": "meta.block.image-wrapper.tmd",
       "patterns": [
@@ -74,13 +74,13 @@
     "content-block": {
       "begin": "^(\\|>)(!|@|\\$|##|#|\\?|\\+|~~|&)(?:\\s+(\\[.*?\\]))?$",
       "beginCaptures": {
-        "1": { "name": "punctuation.definition.block.begin.tmd" },
-        "2": { "name": "keyword.control.block.token.tmd" },
-        "3": { "name": "entity.name.block.title.tmd" }
+        "1": { "name": "keyword.control.block.begin.tmd" },
+        "2": { "name": "entity.name.function.block.token.tmd" },
+        "3": { "name": "string.unquoted.block.title.tmd" }
       },
       "end": "^(<\\|)$",
       "endCaptures": {
-        "1": { "name": "punctuation.definition.block.end.tmd" }
+        "1": { "name": "keyword.control.block.end.tmd" }
       },
       "name": "meta.block.content.tmd",
       "patterns": [

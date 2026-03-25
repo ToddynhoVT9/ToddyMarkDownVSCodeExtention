@@ -5,10 +5,10 @@
   "tokenColors": [
     {
       "scope": [
-        "punctuation.definition.block.begin.tmd",
-        "punctuation.definition.block.end.tmd",
-        "punctuation.definition.literal.begin.tmd",
-        "punctuation.definition.literal.end.tmd"
+        "keyword.control.block.begin.tmd",
+        "keyword.control.block.end.tmd",
+        "keyword.control.literal.begin.tmd",
+        "keyword.control.literal.end.tmd"
       ],
       "settings": {
         "foreground": "#ff4fd8"
@@ -16,8 +16,8 @@
     },
     {
       "scope": [
-        "keyword.control.block.token.tmd",
-        "keyword.control.block.image-mode.tmd"
+        "entity.name.function.block.token.tmd",
+        "entity.name.function.block.image-mode.tmd"
       ],
       "settings": {
         "foreground": "#d9a441"
@@ -25,7 +25,7 @@
     },
     {
       "scope": [
-        "entity.name.block.title.tmd"
+        "string.unquoted.block.title.tmd"
       ],
       "settings": {
         "foreground": "#ff9b42"
